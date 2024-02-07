@@ -25,6 +25,7 @@ $$V:\text{Potential ratchet}$$
 </p>
 
 SIR model:
+
 $$Prob\{\Delta S (t)=i,\Delta I(t)=j|(S(t),I(t))\}=
 	\begin{cases}
 		\frac{\beta}{N} S(t)I(t)\Delta t+o(\Delta t),&(i,j)=(-1,1)(infección)\\
