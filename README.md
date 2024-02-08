@@ -11,20 +11,37 @@
 ### Ecuaciòn de Langevin, Focker-Planck
 
 ### Motor Browniano
-<p align="center">
-<img src="./images/ratchet_feyman.png">
-</p>
 
 $$m\dot{x} = -\frac{dV}{dx} +\frac{1}{m\gamma}F + \sqrt{2D}\xi(t)$$
 $$V:\text{Potential ratchet}$$
 
+    
+$$V(x)=V_0 \left[C+ \sin \left(2 \pi (x-x_0)  \right) +\frac{1}{4} \sin \left(4 \pi (x-x_0) \right) \right]$$
+
+
+$$C\approx -1.1 \quad x_0 \approx -1.9$$
 
 ### Modelos epidemicos
-<p align="center">
-<img src="./images/SIR.png" width="200" height="100">
-</p>
 
-SIR model:
+Modelo SIR clasico
+
+$$S+I+R=N$$
+
+$$\begin{align}
+\frac{dS}{dt}&=-\frac{\beta}{N}SI\\
+\frac{dI}{dt}&=\frac{\beta}{N}SI-\gamma I\\
+\frac{dR}{dt}&=\gamma I
+\end{align}$$
+
+Ecuación diferencial con población variable.
+
+$$\begin{align}
+\frac{dS}{dt}&=-\frac{\beta}{N}SI-\phi S + \eta N\\
+\frac{dI}{dt}&=\frac{\beta}{N}SI-(\gamma+\phi) I\\
+\frac{dR}{dt}&=\gamma I (1-\lambda) - \phi R
+\end{align}$$
+
+Version estocastico del modelo SIR con población variable (falta modificar, e colocado el tradicional).
 
 $$Prob\{\Delta S (t)=i,\Delta I(t)=j|(S(t),I(t))\}=
 	\begin{cases}
@@ -34,8 +51,16 @@ $$Prob\{\Delta S (t)=i,\Delta I(t)=j|(S(t),I(t))\}=
 		o(\Delta t),& otherwise 	
 	\end{cases}$$
 
-### Crecimiento celular -> cambiar a un proceso geologico/geophsyico/climatico/etc
+Los parametros $\eta, \gamma, \beta, \lambda$ se fijan de acuerdo a fuentes oficiales o a travez del ajuste con los datos.
 
+### Procesos geologicos
+
+
+## Simulaciones
+
+### Separación de iones
+### Modelo SIR
+### Erupción volcanica
 
 ## Conclusiones
 
