@@ -73,6 +73,8 @@ $$$$
 ## Simulaciones
 
 ### Separación de iones usando el potencial ratchet
+Ratchets can be useful for many applications, but of particular interest to us is to examine the range of parameters that drive ions with the same charge (polarity and valence), in opposite directions.
+
 ### Modelo epidemico SIR
 ### Modelado de dispersión estocástica lagrangiana
 
